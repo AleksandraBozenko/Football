@@ -16,7 +16,13 @@ html {
   color: white;
   &__logo{
     width: 100%;
-    height: 40vw;
+    height: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--img{
+      height: 90%;
+    }
   }
   &__content{
     width: 100%;
@@ -43,7 +49,7 @@ html {
 @media (max-width:300px){
   .header{
     &__logo{
-      height: 60vw;
+      height: 30vw;
     }
     &__content{
       &--box{
@@ -57,12 +63,12 @@ html {
 @media (min-width:700px){
   .header{
     &__logo{
-      height: 15vw;
+      height: 40vw;
     }
     &__content{
       flex-direction: row;
       &--box{
-        margin-top: 200px;
+        margin-top: 40px;
         width: 20vw;
         height: 30vw;
         font-size: 1.5em;
