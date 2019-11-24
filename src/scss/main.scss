@@ -33,7 +33,7 @@ html {
     &--box{
       width: 60vw;
       height: 90vw;
-      background: rgb(78, 120, 219);
+      background: white;
       color: black;
       display: flex;
       justify-content: center;
@@ -44,6 +44,21 @@ html {
         padding: 3vw;
         font-weight: bold;
       }
+    }
+    &--box:hover{
+      cursor: pointer;
+    }
+    &--box-senior:hover{
+      background: lightblue;
+    }
+    &--box-junior:hover{
+      background: greenyellow;
+    }
+    &--box-fb:hover{
+      background: rgb(61, 170, 206);
+    }
+    &--box-yt:hover{
+      background: red;
     }
   }
 }
