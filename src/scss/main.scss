@@ -32,10 +32,57 @@ html {
       justify-content: center;
       align-items: flex-end;
       font-size: 2em;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
       &-text{
         padding: 3vw;
         font-weight: bold;
+      }
+    }
+  }
+}
+@media (max-width:300px){
+  .header{
+    &__logo{
+      height: 60vw;
+    }
+    &__content{
+      &--box{
+        width: 78vw;
+        height: 90vw;
+        font-size: 1em;
+      }
+    }
+  }
+}
+@media (min-width:700px){
+  .header{
+    &__logo{
+      height: 15vw;
+    }
+    &__content{
+      flex-direction: row;
+      &--box{
+        margin-top: 200px;
+        width: 20vw;
+        height: 30vw;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+@media (min-width:1000px){
+  .header{
+    &__logo{
+      height: 15vw;
+    }
+    &__content{
+      flex-direction: row;
+      &--box{
+        margin-top: 0;
+        width: 20vw;
+        height: 30vw;
+        background: yellow;
+        font-size: 2em;
       }
     }
   }
