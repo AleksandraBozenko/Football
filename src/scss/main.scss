@@ -134,6 +134,49 @@ html {
     }
   }
 }
+// Podstrona ZESPOŁY
+.groups{
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__header{
+    &--title{
+      margin: 0;
+      text-align: center;
+      padding: 5vw;
+    }
+  }
+}
+.football{
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__subtitle{
+    text-align: center;
+    padding: 1vw;
+  }
+  &__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    &--box{
+      background-color: brown;
+      // min-width: 40vw;
+      width: 90vw;
+      height: 20vw;
+      margin-top: 2vw;
+    }
+  }
+}
+
+
 @media (max-width:300px){
   .header{
     &__logo{
