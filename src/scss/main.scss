@@ -1,9 +1,10 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=News+Cycle&display=swap');
 
 html {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 *, *:before, *:after {
@@ -44,50 +45,92 @@ html {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      font-size: 3em;
       margin-bottom: 30px;
+      position: relative;
+      z-index: 1;
+      
       &-text{
-        padding: 3vw;
+        width: 100%;
+        text-align: center;
+        font-size: 1.1em;
+        letter-spacing: 2px;
+        padding: 1vw;
         font-weight: bold;
         z-index: 5;
+        margin-top: 5px;
+        // background-color: rgba(0, 0, 0, 0.548);
       }
+      // &--box::before{
+      //   content: "";
+      //   position: absolute;
+      //   width: 100%;
+      //   height: 100%;
+      //   top: 80px;
+      //   left: 30px;
+      //   background-color: red;
+      //   z-index: 6;
+      // }
       &-image{
         width: 50vh;
         height: 100%;
         // padding: 30px;
       }
-      &-senior{
-        background-image: url('/assets/img/academy.jpg');
+      &-news{
+        background-image: url('/assets/img/news.jpg');
         background-size: cover;
       }
-      &-junior{
-        background-image: url('/assets/img/academy.jpg');
+      &-groups{
+        background-image: url('/assets/img/groups.jpg');
         background-size: cover;
       }
       &-fb{
         background-image: url('/assets/img/socialsbg.jpg');
         background-size: cover;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
       }
       &-yt{
         background-image: url('/assets/img/socialsbg.jpg');
         background-size: cover;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+      }
+      &-socials{
+        width: 10vw;
+        height: 10vw;
+        margin-top: 80px;
       }
     }
-    
+    .header__content--box::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+      z-index: 2;
+      opacity: .6;
+    }
+    .header__content--box:hover::before{
+      opacity: 0;
+    }
     &--box:hover{
       cursor: pointer;
     }
-    &--box-senior:hover{
+    &--box-news:hover{
       background: rgb(199, 139, 27);
     }
-    &--box-junior:hover{
+    &--box-groups:hover{
       background: rgb(31, 165, 53);
     }
     &--box-fb:hover{
-      background: rgb(52, 16, 150);
+      background: $fb;
     }
     &--box-yt:hover{
-      background: rgb(180, 21, 21);
+      background: $yt;
     }
   }
 }
@@ -114,10 +157,15 @@ html {
       &--box{
         width: 80vw;
         height: 90vw;
-        font-size: 2em;
+        font-size: 6em;
+        &-socials{
+          width: 50vw;
+          height: 50vw;
+        }
       }
     }
   }
+ 
 }
 @media (min-width:700px){
   .header{
@@ -130,7 +178,10 @@ html {
         margin-top: 40px;
         width: 20vw;
         height: 30vw;
-        font-size: 1.5em;
+        font-size: 1em;
+        &-text{
+          width: 100%;
+        }
       }
     }
   }
@@ -151,3 +202,68 @@ html {
     }
   }
 }
+// @media (min-width:1030px){
+//   .header{
+//     &__logo{
+//       // height: 15vw;
+//     }
+//     &__content{
+//       // flex-direction: row;
+//       &--box{
+//         // margin-top: 0;
+//         // width: 20vw;
+//         // height: 30vw;
+//         font-size: 1em;
+//       }
+//     }
+//   }
+// }
+@media (max-width:1230px){
+  .header{
+    &__logo{
+      // height: 15vw;
+    }
+    &__content{
+      // flex-direction: row;
+      &--box{
+        // margin-top: 0;
+        // width: 20vw;
+        // height: 30vw;
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+// @media (min-width:1430px){
+//   .header{
+//     &__logo{
+//       // height: 15vw;
+//     }
+//     &__content{
+//       // flex-direction: row;
+//       &--box{
+//         // margin-top: 0;
+//         // width: 20vw;
+//         // height: 30vw;
+//         font-size: 1.7em;
+//       }
+//     }
+//   }
+// }
+// @media (min-width:2030px){
+//   .header{
+//     &__logo{
+//       // height: 15vw;
+//     }
+//     &__content{
+//       // flex-direction: row;
+//       &--box{
+//         // margin-top: 0;
+//         // width: 20vw;
+//         // height: 30vw;
+//         font-size: 3em;
+//       }
+//     }
+//   }
+// }
+
