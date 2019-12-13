@@ -217,7 +217,7 @@ html {
       // min-width: 40vw;
       padding: 2vw;
       width: 80vw;
-      min-height: 50vw;
+      height: 50vw;
       margin-bottom: 4vw;
       color: white;
       &-button{
@@ -270,6 +270,13 @@ html {
       }
     }
   }
+  .athletics{
+    &__container{
+      &--box{
+        width: 60%;
+      }
+    }
+  }
 }
 // @media (max-width:700px){
 //   .header{
@@ -291,6 +298,16 @@ html {
  
 @media (min-width:515px){
   .football{
+    &__container{
+      &--box{
+        font-size: 1.3em;
+        width: 50vw;
+        height: 35vw;
+        margin-left: .5vw;
+      }
+    }
+  }
+  .athletics{
     &__container{
       &--box{
         font-size: 1.3em;
@@ -349,6 +366,19 @@ html {
       }
     }
   }
+  .athletics{
+    &__container{
+      &--box{
+        font-size: 1.3em;
+        width: 44vw;
+        height: 15vw;
+        margin-left: 2vw;
+        &-button{
+          padding: .8vw;
+        }
+      }
+    }
+  }
 }
 // @media (min-width:1030px){
   // .header{
@@ -385,6 +415,19 @@ html {
         width: 24.4vw;
         height: 15vw;
         margin-left: .4vw;
+        &-button{
+          padding: .8vw;
+        }
+      }
+    }
+  }
+  .athletics{
+    &__container{
+      &--box{
+        font-size: 1.3em;
+        width: 44vw;
+        height: 15vw;
+        margin-left: 2vw;
         &-button{
           padding: .8vw;
         }
@@ -430,6 +473,19 @@ html {
         width: 23vw;
         height: 15vw;
         margin-left: 1vw;
+        &-button{
+          padding: .8vw;
+        }
+      }
+    }
+  }
+  .athletics{
+    &__container{
+      &--box{
+        font-size: 1.3em;
+        width: 44vw;
+        height: 15vw;
+        margin-left: 2vw;
         &-button{
           padding: .8vw;
         }
