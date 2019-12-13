@@ -11,7 +11,7 @@ html {
   box-sizing: inherit;
 }
 .header{
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   background: black;
   color: white;
@@ -147,18 +147,19 @@ html {
       text-align: center;
       padding: 5vw;
     }
+    // &--subtitle{
+    //   text-align: center;
+    //   padding: 1vw;
+    //   font-size: 1.2em;
+    // }
   }
 }
 .football{
-  width: 90vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  &__subtitle{
-    text-align: center;
-    padding: 1vw;
-  }
+  // flex-direction: column;
   &__container{
     display: flex;
     justify-content: space-around;
@@ -166,17 +167,87 @@ html {
     flex-wrap: wrap;
     // display: grid;
     // grid-template-columns: 1fr 1fr 1fr 1fr;
-    &--box{
-      background-color: brown;
+    &__box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: red;
       // min-width: 40vw;
-      width: 90vw;
-      height: 20vw;
-      margin-top: 2vw;
+      padding: 2vw;
+      width: 80vw;
+      min-height: 50vw;
+      margin-bottom: 4vw;
+      color: white;
+      &-button{
+        background-color: #fff;
+        border: none;
+        color: black;
+        padding: 3vw;
+      }
+    }
+    &--box:nth-child(2n+1){
+      background-color: blue;
+    }
+  }
+}
+.athletics{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(23, 23, 104);
+  // flex-direction: column;
+  &__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    &--subtitle{
+      color: white;
+    }
+    &--box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: red;
+      // min-width: 40vw;
+      padding: 2vw;
+      width: 80vw;
+      min-height: 50vw;
+      margin-bottom: 4vw;
+      color: white;
+      &-button{
+        background-color: #fff;
+        border: none;
+        color: black;
+        padding: 3vw;
+      }
+    }
+    &--box:nth-child(2n+1){
+      background-color: blue;
     }
   }
 }
 
-
+@media (min-width:0px){
+  .header{
+    width: 100vw;
+    &__logo{
+      height: 30vw;
+    }
+    &__content{
+      &--box{
+        width: 78vw;
+        height: 90vw;
+        font-size: 1em;
+      }
+    }
+  }
+}
 @media (max-width:300px){
   .header{
     &__logo{
@@ -191,26 +262,35 @@ html {
     }
   }
 }
-@media (max-width:700px){
-  .header{
-    &__logo{
-      height: 30vw;
-    }
-    &__content{
-      &--box{
-        width: 80vw;
-        height: 90vw;
-        font-size: 6em;
-        &-socials{
-          width: 50vw;
-          height: 50vw;
-        }
+@media (min-width:490px){
+  .football{
+    &__container{
+      &__box{
+        width: 60%;
       }
     }
   }
- 
 }
-@media (min-width:700px){
+// @media (max-width:700px){
+//   .header{
+//     &__logo{
+//       height: 30vw;
+//     }
+//     &__content{
+//       &--box{
+//         width: 80vw;
+//         height: 90vw;
+//         font-size: 6em;
+//         &-socials{
+//           width: 50vw;
+//           height: 50vw;
+//         }
+//       }
+//     }
+//   }
+ 
+
+@media (min-width:715px){
   .header{
     &__logo{
       height: 40vw;
@@ -221,10 +301,20 @@ html {
         margin-top: 40px;
         width: 20vw;
         height: 30vw;
-        font-size: 1em;
+        
         &-text{
-          width: 100%;
+          // width: 100%;
+          font-size: .8em;
         }
+      }
+    }
+  }
+  .football{
+    &__container{
+      &__box{
+        font-size: 1.3em;
+        width: 40%;
+        margin-left: 2vw;
       }
     }
   }
@@ -239,29 +329,68 @@ html {
       &--box{
         margin-top: 0;
         width: 20vw;
-        height: 30vw;
+        // height: 10vw;
         font-size: 2em;
       }
     }
   }
 }
 // @media (min-width:1030px){
-//   .header{
-//     &__logo{
-//       // height: 15vw;
-//     }
-//     &__content{
-//       // flex-direction: row;
-//       &--box{
-//         // margin-top: 0;
-//         // width: 20vw;
-//         // height: 30vw;
-//         font-size: 1em;
-//       }
-//     }
-//   }
+  // .header{
+  //   &__logo{
+  //     // height: 15vw;
+  //   }
+  //   &__content{
+  //     // flex-direction: row;
+  //     &--box{
+  //       // margin-top: 0;
+  //       // width: 20vw;
+  //       // height: 30vw;
+  //       font-size: 1em;
+  //     }
+  //   }
+  // }
 // }
-@media (max-width:1230px){
+@media (min-width:1230px){
+  .header{
+    &__content{
+      &--box{
+        font-size: 2.1em;
+        // height: 10vh;
+        &-text{
+          font-size: .8em;
+        }
+      }
+    }
+  }
+  .football{
+    &__container{
+      &__box{
+        font-size: 1.3em;
+        width: 20%;
+        height: 5vw;
+        margin-left: 2vw;
+      }
+    }
+  }
+}
+@media (min-width:2530px){
+  .header{
+    &__content{
+      // flex-direction: row;
+      &--box{
+        // margin-top: 0;
+        // width: 20vw;
+        // height: 30vw;
+        font-size: 3em;
+        // &-text{
+          
+        // }
+      }
+    }
+  }
+}
+@media (min-width:1430px){
   .header{
     &__logo{
       // height: 15vw;
@@ -272,41 +401,25 @@ html {
         // margin-top: 0;
         // width: 20vw;
         // height: 30vw;
-        font-size: 1.3em;
+        font-size: 2.2em;
       }
     }
   }
 }
-// @media (min-width:1430px){
-//   .header{
-//     &__logo{
-//       // height: 15vw;
-//     }
-//     &__content{
-//       // flex-direction: row;
-//       &--box{
-//         // margin-top: 0;
-//         // width: 20vw;
-//         // height: 30vw;
-//         font-size: 1.7em;
-//       }
-//     }
-//   }
-// }
-// @media (min-width:2030px){
-//   .header{
-//     &__logo{
-//       // height: 15vw;
-//     }
-//     &__content{
-//       // flex-direction: row;
-//       &--box{
-//         // margin-top: 0;
-//         // width: 20vw;
-//         // height: 30vw;
-//         font-size: 3em;
-//       }
-//     }
-//   }
-// }
+@media (min-width:2030px){
+  .header{
+    &__logo{
+      // height: 15vw;
+    }
+    &__content{
+      // flex-direction: row;
+      &--box{
+        // margin-top: 0;
+        // width: 20vw;
+        // height: 30vw;
+        font-size: 3em;
+      }
+    }
+  }
+}
 
