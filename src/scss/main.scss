@@ -159,7 +159,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  // flex-direction: column;
+  flex-direction: column;
   &__container{
     display: flex;
     justify-content: space-around;
@@ -167,7 +167,7 @@ html {
     flex-wrap: wrap;
     // display: grid;
     // grid-template-columns: 1fr 1fr 1fr 1fr;
-    &__box{
+    &--box{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -176,7 +176,7 @@ html {
       // min-width: 40vw;
       padding: 2vw;
       width: 80vw;
-      min-height: 50vw;
+      height: 50vw;
       margin-bottom: 4vw;
       color: white;
       &-button{
@@ -197,7 +197,10 @@ html {
   justify-content: center;
   align-items: center;
   background-color: rgb(23, 23, 104);
-  // flex-direction: column;
+  flex-direction: column;
+  &__subtitle{
+    color: white;
+  }
   &__container{
     display: flex;
     justify-content: space-around;
@@ -205,9 +208,6 @@ html {
     flex-wrap: wrap;
     // display: grid;
     // grid-template-columns: 1fr 1fr 1fr 1fr;
-    &--subtitle{
-      color: white;
-    }
     &--box{
       display: flex;
       justify-content: center;
@@ -265,7 +265,7 @@ html {
 @media (min-width:490px){
   .football{
     &__container{
-      &__box{
+      &--box{
         width: 60%;
       }
     }
@@ -289,7 +289,18 @@ html {
 //     }
 //   }
  
-
+@media (min-width:515px){
+  .football{
+    &__container{
+      &--box{
+        font-size: 1.3em;
+        width: 50vw;
+        height: 35vw;
+        margin-left: .5vw;
+      }
+    }
+  }
+}
 @media (min-width:715px){
   .header{
     &__logo{
@@ -309,15 +320,6 @@ html {
       }
     }
   }
-  .football{
-    &__container{
-      &__box{
-        font-size: 1.3em;
-        width: 40%;
-        margin-left: 2vw;
-      }
-    }
-  }
 }
 @media (min-width:1000px){
   .header{
@@ -331,6 +333,19 @@ html {
         width: 20vw;
         // height: 10vw;
         font-size: 2em;
+      }
+    }
+  }
+  .football{
+    &__container{
+      &--box{
+        font-size: 1.3em;
+        width: 40vw;
+        height: 15vw;
+        margin-left: .4vw;
+        &-button{
+          padding: .8vw;
+        }
       }
     }
   }
@@ -351,7 +366,7 @@ html {
   //   }
   // }
 // }
-@media (min-width:1230px){
+@media (min-width:1248px){
   .header{
     &__content{
       &--box{
@@ -365,11 +380,14 @@ html {
   }
   .football{
     &__container{
-      &__box{
+      &--box{
         font-size: 1.3em;
-        width: 20%;
-        height: 5vw;
-        margin-left: 2vw;
+        width: 24.4vw;
+        height: 15vw;
+        margin-left: .4vw;
+        &-button{
+          padding: .8vw;
+        }
       }
     }
   }
@@ -402,6 +420,19 @@ html {
         // width: 20vw;
         // height: 30vw;
         font-size: 2.2em;
+      }
+    }
+  }
+  .football{
+    &__container{
+      &--box{
+        font-size: 1.3em;
+        width: 23vw;
+        height: 15vw;
+        margin-left: 1vw;
+        &-button{
+          padding: .8vw;
+        }
       }
     }
   }
