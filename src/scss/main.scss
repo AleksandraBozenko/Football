@@ -4,7 +4,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 *, *:before, *:after {
@@ -37,6 +37,9 @@ html {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    &--link{
+      text-decoration: none;
+    }
     &--box{
       width: 50vw;
       height: 80vw;
@@ -172,22 +175,24 @@ html {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background-color: red;
+      background-color: rgb(230, 22, 22);
       // min-width: 40vw;
       padding: 2vw;
       width: 80vw;
       height: 50vw;
       margin-bottom: 4vw;
       color: white;
+      
       &-button{
         background-color: #fff;
         border: none;
-        color: black;
+        color: rgb(31, 31, 31);
         padding: 3vw;
+        font-size: .7em;
       }
     }
     &--box:nth-child(2n+1){
-      background-color: blue;
+      background-color: rgb(14, 14, 202);
     }
   }
 }
@@ -196,7 +201,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(23, 23, 104);
+  background-color: rgb(23, 23, 85);
   flex-direction: column;
   &__subtitle{
     color: white;
@@ -213,22 +218,25 @@ html {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background-color: red;
+      background-color: rgb(230, 22, 22);
       // min-width: 40vw;
       padding: 2vw;
       width: 80vw;
       height: 50vw;
       margin-bottom: 4vw;
       color: white;
+      font-weight: bold;
       &-button{
-        background-color: #fff;
+        background-color: rgb(23, 23, 85);
         border: none;
-        color: black;
+        color: white;
         padding: 3vw;
+        min-width: 10vw;
+        font-size: .7em;
       }
     }
     &--box:nth-child(2n+1){
-      background-color: blue;
+      background-color: rgb(14, 14, 202);
     }
   }
 }
@@ -412,7 +420,7 @@ html {
     &__container{
       &--box{
         font-size: 1.3em;
-        width: 24.4vw;
+        width: 22.4vw;
         height: 15vw;
         margin-left: .4vw;
         &-button{
@@ -435,22 +443,7 @@ html {
     }
   }
 }
-@media (min-width:2530px){
-  .header{
-    &__content{
-      // flex-direction: row;
-      &--box{
-        // margin-top: 0;
-        // width: 20vw;
-        // height: 30vw;
-        font-size: 3em;
-        // &-text{
-          
-        // }
-      }
-    }
-  }
-}
+
 @media (min-width:1430px){
   .header{
     &__logo{
@@ -505,6 +498,22 @@ html {
         // width: 20vw;
         // height: 30vw;
         font-size: 3em;
+      }
+    }
+  }
+}
+@media (min-width:2530px){
+  .header{
+    &__content{
+      // flex-direction: row;
+      &--box{
+        // margin-top: 0;
+        // width: 20vw;
+        // height: 30vw;
+        font-size: 3em;
+        // &-text{
+          
+        // }
       }
     }
   }
