@@ -312,7 +312,7 @@ template {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Archivo Narrow', sans-serif; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -366,6 +366,8 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    .header__content--link {
+      text-decoration: none; }
     .header__content--box {
       width: 50vw;
       height: 80vw;
@@ -511,7 +513,7 @@ html {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      background-color: red;
+      background-color: #e61616;
       padding: 2vw;
       width: 80vw;
       height: 50vw;
@@ -520,10 +522,11 @@ html {
       .football__container--box-button {
         background-color: #fff;
         border: none;
-        color: black;
-        padding: 3vw; }
+        color: #1f1f1f;
+        padding: 3vw;
+        font-size: .7em; }
     .football__container--box:nth-child(2n+1) {
-      background-color: blue; }
+      background-color: #0e0eca; }
 
 .athletics {
   width: 100%;
@@ -536,7 +539,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #171768;
+  background-color: #171755;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -568,19 +571,22 @@ html {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      background-color: red;
+      background-color: #e61616;
       padding: 2vw;
       width: 80vw;
       height: 50vw;
       margin-bottom: 4vw;
-      color: white; }
+      color: white;
+      font-weight: bold; }
       .athletics__container--box-button {
-        background-color: #fff;
+        background-color: #171755;
         border: none;
-        color: black;
-        padding: 3vw; }
+        color: white;
+        padding: 3vw;
+        min-width: 10vw;
+        font-size: .7em; }
     .athletics__container--box:nth-child(2n+1) {
-      background-color: blue; }
+      background-color: #0e0eca; }
 
 @media (min-width: 0px) {
   .header {
@@ -667,7 +673,7 @@ html {
       font-size: .8em; }
   .football__container--box {
     font-size: 1.3em;
-    width: 24.4vw;
+    width: 22.4vw;
     height: 15vw;
     margin-left: .4vw; }
     .football__container--box-button {
@@ -679,10 +685,6 @@ html {
     margin-left: 2vw; }
     .athletics__container--box-button {
       padding: .8vw; } }
-
-@media (min-width: 2530px) {
-  .header__content--box {
-    font-size: 3em; } }
 
 @media (min-width: 1430px) {
   .header__content--box {
@@ -703,6 +705,10 @@ html {
       padding: .8vw; } }
 
 @media (min-width: 2030px) {
+  .header__content--box {
+    font-size: 3em; } }
+
+@media (min-width: 2530px) {
   .header__content--box {
     font-size: 3em; } }
 
