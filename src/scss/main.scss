@@ -344,6 +344,7 @@ html {
     color: white;
     }
 }
+}
 
 .navigation--active {
   transform: translateX(0px);
@@ -650,7 +651,7 @@ html {
     }
   }
 }
-}
+
 @media (min-width:2530px){
   .header{
     &__content{
