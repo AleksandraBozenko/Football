@@ -402,24 +402,34 @@ html {
 .info{
   padding: 2vw;
   &__title{
-    margin-left: 5vw;
+    text-align: center;
   }
   &__box{
     width: 100vw;
-    min-height: 50vw;
+    // min-height: 50vw;
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &--img{
+      width: 60vw;
+      height: 60vw;
+    }
     &--description{
       &-data{
         color: grey;
       }
+      &-title{
+        font-size: 1.6em;
+      }
       &-button{
-        padding: 2vw;
-        // border: 2px solid black;
-        background-color: rgb(227, 227, 230);
+        padding: 2.5vw;
+        border: none;
+        // background-color: rgb(227, 227, 230);
+        background-color: black;
         color: rgb(211, 124, 43);
+        font-weight: bold;
       }
     }
   }
@@ -442,8 +452,8 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 40%;
-      height: 25%;
+      width: 30%;
+      height: 20%;
       &-img{
         width: 100%;
         height: 100%;
@@ -597,6 +607,27 @@ html {
   }
   .nav{
     display: block;
+  }
+  .info{
+    width: 60vw;
+    &__title{
+      font-size: 2em;
+    }
+    &__box{
+      flex-direction: row;
+      justify-content: space-around;
+      width: 60vw;
+      border-bottom: 1px solid rgb(211, 210, 210);
+      &--img{
+        width: 15vw;
+        height: 15vw;
+      }
+      &--description{
+        &-button{
+          padding: 1vw;
+        }
+      }
+    }
   }
   .footer{
     flex-direction: row;
