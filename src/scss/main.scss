@@ -400,6 +400,7 @@ html {
 // Aktualności
 
 .info{
+  padding: 2vw;
   &__title{
     margin-left: 5vw;
   }
@@ -415,7 +416,7 @@ html {
         color: grey;
       }
       &-button{
-        padding: 4vw;
+        padding: 2vw;
         // border: 2px solid black;
         background-color: rgb(227, 227, 230);
         color: rgb(211, 124, 43);
@@ -423,7 +424,41 @@ html {
     }
   }
 }
-
+//Footer
+.footer{
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  &__box{
+    padding: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &--icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      height: 25%;
+      &-img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &--subtitle{
+      color: rgb(211, 124, 43);
+      font-weight: bold;
+    }
+    &--text{
+      color: white;
+      text-align: center;
+    }
+  }
+}
 @media (min-width:0px){
   .header{
     width: 100vw;
@@ -562,6 +597,9 @@ html {
   }
   .nav{
     display: block;
+  }
+  .footer{
+    flex-direction: row;
   }
 }
 @media (min-width:1000px){
