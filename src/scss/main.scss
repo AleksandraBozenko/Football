@@ -257,6 +257,7 @@ html {
     &--img{
       width: 100%;
       height: 100%;
+      margin-right: 10vw;
       // padding: 10vw;
     }
   }
@@ -275,7 +276,7 @@ html {
 }
 
 .hamburger--active {
-  transform: translatex(55vw);
+  transform: translatex(65vw);
 }
 
 .hamburger__box {
@@ -293,8 +294,7 @@ html {
 }
 
 .hamburger__inner{
-  @include hamburger-line;
-  
+  @include hamburger-line; 
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -332,12 +332,12 @@ html {
 
 .navigation{
   height: 100vh;
-  width: 60vw;
+  width: 82vw;
   background-color: black;
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-60vw);
+  transform: translateX(-82vw);
   &__list{
     margin-top: 50px;
     list-style: none;
@@ -604,6 +604,13 @@ html {
   }
   .hamburger,.navigation{
     display: none;
+  }
+  .menu{
+    &__logo{
+      &--img{
+        margin: 0;
+      }
+    }
   }
   .nav{
     display: block;
