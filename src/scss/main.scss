@@ -417,11 +417,16 @@ html {
       height: 60vw;
     }
     &--description{
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      flex-direction: column;
       &-data{
         color: grey;
       }
       &-title{
         font-size: 1.6em;
+        margin: 0;
       }
       &-button{
         padding: 2.5vw;
@@ -434,6 +439,28 @@ html {
     }
   }
 }
+ //Wydarzenie
+  .event{
+    width: 100%;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__header{
+      width: 75%;
+      &--data{
+        color: grey;
+      }
+      &__box{
+        width: 80vw;
+      }
+    }
+    &__img{
+      width: 70vw;
+      height: 70vw;
+    }
+  }
 //Footer
 .footer{
   width: 100vw;
@@ -623,7 +650,7 @@ html {
    }
   }
   .info{
-    width: 60vw;
+    width: 70vw;
     &__title{
       font-size: 2em;
     }
@@ -637,6 +664,7 @@ html {
         height: 15vw;
       }
       &--description{
+        display: inline;
         margin-left: 5vw;
         &-button{
           padding: 1vw;
@@ -644,8 +672,38 @@ html {
       }
     }
   }
+  .event{
+    width: 70%;
+    // padding: 10vw;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    &__header{
+      width: 80%;
+      &--data{
+        color: grey;
+      }
+      &--title{
+        font-size: 2em;
+      }
+      &__box{
+        width: 80vw;
+      }
+    }
+    &__img{
+      width: 50vw;
+      height: 50vw;
+    }
+    &__box{
+      &--text{
+        font-size: 1.1em;
+      }
+    }
+  }
   .footer{
     flex-direction: row;
+    width: 100%;
   }
 }
 @media (min-width:1000px){
